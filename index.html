@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Todo List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Todo List</h1>
+        <div class="add-task">
+            <input type="text" id="taskInput" placeholder="Add new task">
+            <select id="prioritySelect">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <select id="categorySelect">
+                <option value="work">Work</option>
+                <option value="personal">Personal</option>
+                <option value="shopping">Shopping</option>
+            </select>
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+        <div class="filter-options">
+            <label for="categoryFilter">Filter by Category:</label>
+            <select id="categoryFilter">
+                <option value="all">All</option>
+                <option value="work">Work</option>
+                <option value="personal">Personal</option>
+                <option value="shopping">Shopping</option>
+            </select>
+        </div>
+        <ul id="taskList" class="sortable-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
